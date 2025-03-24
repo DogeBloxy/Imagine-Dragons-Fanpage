@@ -1,0 +1,213 @@
+/* Général */
+body {
+    scroll-behavior: smooth;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Place la vidéo derrière le contenu */
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 1; /* Place le contenu au-dessus de la vidéo */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Améliore la lisibilité du texte */
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+}
+
+/* Navigation */
+.navbar {
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-link {
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #f8d210;
+}
+
+/* Sections */
+.section {
+    padding: 60px 15px;
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #222;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+/* Biographie */
+#biography img {
+    border-radius: 50%;
+    border: 5px solid #ddd;
+    transition: transform 0.3s ease;
+}
+
+#biography img:hover {
+    transform: scale(1.05);
+}
+
+#biography p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+/* Discographie */
+
+#discography ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#discography li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+
+.large-carousel {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.large-carousel .carousel-inner {
+    height: 500px;
+}
+
+.large-carousel iframe {
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-item {
+    height: 500px;
+}
+
+/* Réseaux sociaux */
+#socials .btn {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#socials .btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.facebook {
+    background-color: #0866FF;
+    color: #ffffff;
+}
+
+.facebook:hover {
+    background-color: #0866FF;
+    color: #ffffff;
+}
+
+.twitter {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.twitter:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.instagram {
+    background: radial-gradient(circle at 30% 110%,
+    #ffdb8b 0%,
+    #ee653d 25%,
+    #d42e81 50%,
+    #a237b6 75%,
+    #3e57bc 100%);
+    color: #ffffff;
+}
+
+.instagram:hover {
+    color: #ffffff;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+a:focus, button:focus {
+    outline: 2px solid #f8d210;
+    outline-offset: 2px;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .section {
+        padding: 40px 15px;
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .nav-link {
+        font-size: 0.9rem;
+    }
+
+    #biography img {
+        max-width: 200px;
+    }
+
+    #discography li {
+        font-size: 1rem;
+    }
+
+    #socials .btn {
+        font-size: 1rem;
+    }
+}
